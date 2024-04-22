@@ -426,6 +426,6 @@ body
 
     .player-image-container
     {
-        padding: 30px;
+        padding:100px 30px 30px 30px;
     }
 }
