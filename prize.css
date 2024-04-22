@@ -428,6 +428,18 @@ body
     {
         padding: 30px;
     }
+        .team-player-header-container
+    {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    position: absolute;
+    width: 100%;
+    z-index: 3; 
+    background-image: url(./Image/Background/achievements-first-banner.43e0e0eea22ab06f34c0.png);
+    }
+
 }
 
 
