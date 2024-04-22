@@ -1,0 +1,441 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Poppins,sans-serif;
+}
+
+.team-player-header-container
+{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: absolute;
+    width: 100%;
+    z-index: 3; 
+    background-image: url(./Image/Background/players-first-banner.b6ba3c5b5528ae2918f5.png);
+}
+
+.team-player-container 
+{
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-player-container img 
+{
+    width: 100px;
+    height: auto;
+}
+
+.right-section
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.right-section ul 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-section li 
+{
+    margin-left: 20px;
+    list-style: none;
+}
+
+.right-section ul li a 
+{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.right-section .selected
+{
+    color: white;
+}
+
+.right-section ul li a:hover
+{
+    color:white;
+}
+
+.player-container 
+{
+    padding: 20px 50px;
+    line-height: 1.2;
+}
+
+.player-container h1
+{
+    color: #222;
+    font-size:65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Poppins,sans-serif;
+}
+
+.player-container h2
+{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Poppins,sans-serif;
+}
+
+.all-player-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-legend-player,
+.pubg-player
+{
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgb(255, 207, 0);
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .22);
+    border: none;
+    font-family: "Poppin",sans-serif;
+}
+
+.all-player-container .change
+{
+    background-color: black;
+    color: rgb(255, 207, 0);
+}
+
+.pubg-player:hover,
+.mobile-legend-player:hover,
+.free-fire-player:hover
+{
+    background-color: black;
+    color: rgb(255, 207, 0);
+}
+
+.free-fire-player
+{
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Poppin",sans-serif;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .22);
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgb(255, 207, 0);
+    color: black;
+    font-weight: 700;
+    border: none;
+}
+
+.pubg-player
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-body-container
+{
+    align-items: center;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 400px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(./Image/Background/main-bg.69d901a8833d699dd8dd.png);
+}
+
+
+.player-image-container
+{
+
+    display: grid;
+    column-gap: 20px;
+    row-gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.player-image-container img 
+{
+    max-width: 250px;
+    height: auto;
+}
+
+
+.footer-container
+{
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.footer-container a 
+{
+    text-decoration: none;
+}
+
+.logo-container
+{
+    max-width: 500px;
+}
+
+.logo-container img 
+{
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.link-item img 
+{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.copy-right
+{
+    color: white;
+    font-size: 12px;
+}
+
+@media screen and (max-width:900px)
+{
+    
+
+    .hambuger-menu-container
+    {
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .hambuger-line1,.hambuger-line2,.hambuger-line3
+    {
+        width: 25px;
+        height: 2px;
+        margin:5px 0px;
+        background-color:black;
+        transition: 0.4s;
+    }
+
+    .hambuger-line1,.hambuger-line2,.hambuger-line3:hover
+    {
+        color: #ffcf00;
+    }
+
+    
+    .rotatePlus45deg
+    {
+        transform: rotate(45deg) translate(3px,2px);
+    }
+
+    .hideLine2
+    {
+        display: none;
+    }
+
+    .rotateMinus45deg
+    { 
+        transform: rotate(-45deg) translate(3px,-2px);
+    }
+
+    .left-section
+    {
+        z-index: 1000;
+    }
+
+
+    .nav-bar
+    {
+        position: absolute;
+        top:0px;
+        left: 0px;
+        right: 0px;
+        background-color:#ffcf00;
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    .nav-bar,
+    .nav-bar.active
+    {
+        pointer-events: auto;
+    }
+
+    .nav-bar ul
+    {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0px;
+        align-items: center;
+        margin:20px 0px;
+    }
+
+    .nav-bar.active
+    {
+        opacity: 1;
+    }
+
+    .nav-bar.active ul 
+    {
+        opacity: 1;
+    }
+
+    .nav-bar.active ul li
+    {
+        margin:10px 0px;
+    }
+
+    .nav-bar.active ul li a 
+    {
+        color: black;
+    }
+
+    ul li a:hover 
+    {
+        color: #ffcf00;
+    } 
+
+    .player-image-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .main-body-container
+    {
+        padding-top: 550px;
+    }
+
+
+}
+
+
+@media screen and (max-width:500px)
+{
+    .team-player-container .left-section img 
+    {
+        width: 70px;
+        height: auto;
+    }
+    .player-image-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    .footer-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo-container img 
+    {
+        width: 200px;
+        height:auto;
+        margin-bottom: 20px;
+    }
+
+    .link-item img 
+    {
+        width: 30px;
+        margin-bottom: 20px;
+    }
+
+    .player-container h1
+    {
+        font-size: 40px;
+    }
+
+    .player-container h2 
+    {
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:320px)
+{
+
+    .player-container h1 
+    {
+        font-size: 25px;
+    }
+
+    .player-container h2 
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pubg-player
+    {
+        margin: 0px;
+    }
+
+    .pubg-player,
+    .mobile-legend-player,
+    .free-fire-player
+    {
+        width: 100%;
+        margin: 5px 0px;
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .player-image-container img 
+    {
+        width: 100%;
+        height: auto;
+    }
+}

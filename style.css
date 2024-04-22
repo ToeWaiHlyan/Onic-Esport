@@ -1,0 +1,614 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    font-family: Poppins,sans-serif;
+}
+
+.onic-header-container
+{
+    background-color:black;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.onic-header-container .left-section
+{
+    max-width: 90px;
+    max-height: 90px;
+    text-align: center;
+}
+
+.onic-header-container .left-section img
+{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-section
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.right-section ul 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-section li 
+{
+    margin-left: 20px;
+}
+
+.right-section ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.right-section .selected
+{
+    color: #ffcf00;
+}
+
+.right-section ul li a:hover
+{
+    color:#ffcf00;
+}
+
+.onic-esport-body-container
+{
+    background:radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(./Image/Background/onic-esports-10182023.avif);
+    width: 100%;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;   
+    position: relative;
+}
+
+.home-page
+{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.pro-team
+{
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    width: 300px;
+}
+
+.pro-team img 
+{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px) 
+{
+    .pro-team,
+    .pro-team img
+    {
+        height: auto;
+        top: 72vh;
+        width: 400px;
+    }
+}
+
+
+
+.onic-esport-body-container h1 
+{
+    font-size: 60px;
+    color: white;
+    line-height: 1.2;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+}
+
+.onic-esport-body-container h1 p 
+{
+    color: #ffcf00;
+    font-style: italic;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+}
+
+.text-container p
+{
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 700px;
+    color: white;
+}
+
+.content 
+{
+    overflow-x: hidden;
+    padding: 60px 200px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.home-second-page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(212,176,18,.9),rgba(212,176,18,.9)),url('./Image/Background/home-second-banner.7ae2366fd021dfff6f16.png');
+    background-position: top;
+    background-size: contain;
+}
+
+.second-page-title
+{
+    color: #333333;
+    margin-left: 10px;
+}
+
+.second-page-title .header
+{
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.second-page-title .header p
+{
+    color: white;
+    font-style: normal;
+}
+
+.nav-bar.active
+{
+    z-index: 100;
+}
+
+.second-page-flex
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.first-flex
+{
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 25px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    margin-right: 30px;
+    padding: 50px;
+}
+
+.second-flex 
+{
+    font-weight:500;
+    color: #333333;
+    font-size: 20px;
+    font-family: Poppins,sans-serif;
+}
+
+
+.home-third-page
+{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('./Image/Background/main-bg.69d901a8833d699dd8dd.png');
+}
+
+.vision-container
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.vision-header,.mission-header
+{
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-header p,.mission-header p 
+{
+    font-size: 50px;
+    color:#ffcf00;
+    margin-left: 10px;
+}
+
+
+.mission-container
+{
+    text-align: center;
+    color: white;
+}
+
+
+.footer-container
+{
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.logo-container
+{
+    max-width: 500px;
+}
+
+.logo-container img 
+{
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.link-item img 
+{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.copy-right
+{
+    color: white;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:900px)
+{
+
+    .onic-header-container .left-section img
+    {      
+        margin-top: 4px;
+        cursor: pointer;
+        width: 60px;
+        height: auto;
+    }
+
+
+    .hambuger-menu-container
+    {
+        position: absolute;
+        cursor: pointer;
+        padding-bottom: 5px;
+        right: 20px;
+        z-index: 200;
+    }
+
+    .hambuger-line1,.hambuger-line2,.hambuger-line3
+    {
+        width: 25px;
+        height: 2px;
+        margin:5px 0px;
+        background-color:white;
+        transition: 0.4s;
+    }
+
+    .hambuger-line1,.hambuger-line2,.hambuger-line3:hover
+    {
+        color: #ffcf00;
+    }
+
+    
+    .rotatePlus45deg
+    {
+        transform: rotate(45deg) translate(3px,2px);
+    }
+
+    .hideLine2
+    {
+        display: none;
+    }
+
+    .rotateMinus45deg
+    { 
+        transform: rotate(-45deg) translate(3px,-2px);
+    }
+
+    .left-section
+    {
+        z-index: 1000;
+    }
+
+
+    .nav-bar
+    {
+        position: absolute;
+        top:0px;
+        left: 0px;
+        right: 0px;
+        background-color:black;
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    .nav-bar,
+    .nav-bar.active
+    {
+        pointer-events: auto;
+    }
+
+    .nav-bar ul
+    {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0px;
+        align-items: center;
+        margin:20px 0px;
+    }
+
+    .nav-bar.active
+    {
+        opacity: 1;
+    }
+
+    .nav-bar.active ul 
+    {
+        opacity: 1;
+    }
+
+    .nav-bar.active ul li
+    {
+        margin:10px 0px;
+    }
+
+    ul li a:hover 
+    {
+        color: #ffcf00;
+    }    
+}
+
+@media screen and (max-width:915px)
+{
+    .home-second-page .content
+    {
+        padding: 30px 30px;
+        margin: 0;
+    }
+
+    .first-flex
+    {
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 25px;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .first-flex img 
+    {
+        width: 100%;
+        height: 120px;
+    }
+
+    .second-page-title .header
+    {
+        font-size: 30px;
+    }
+
+    .second-page-flex
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-flex
+    {
+        margin-bottom: 30px;
+    }
+
+    .second-flex
+    {
+        align-items: center;
+        padding: 0px 30px;
+        margin-bottom: 50px;
+    }
+    
+    .pro-team
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px)
+{
+    .home-page h1 
+    {
+        font-size: 30px;
+    }   
+
+    .text-container p 
+    {
+        font-size: 18px;
+    }
+
+    .onic-esport-body-container 
+    {
+        height: 300px;
+    }
+
+    
+    .pro-team
+    {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px)
+{
+
+    .home-page h1 
+    {
+        font-size: 25px;
+    }   
+
+    .text-container p 
+    {
+        font-size: 15px;
+    }
+
+
+    .left-section img 
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .home-page
+    {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .second-page-title .header 
+    {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+
+    .first-flex
+    {
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 25px;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .first-flex img 
+    {
+        width: 100%;
+        height: 120px;
+    }
+
+    .second-flex p 
+    {
+        font-size: 15px;
+    }
+
+    .home-third-page .content
+    {
+        padding: 30px 30px;
+        margin:0px;
+    }
+
+    .vision-header,.mission-header
+    {
+        font-size: 25px;
+    }
+
+    .vision-header p ,
+    .mission-header p
+    {
+        font-size: 25px;
+    }
+
+    .vision-title,.mission-title
+    {
+        font-size: 12px;
+    }
+
+    .footer-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo-container img 
+    {
+        width: 200px;
+        height:auto;
+        margin-bottom: 20px;
+    }
+
+    .link-item img 
+    {
+        width: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:600px)
+{
+    .second-page-flex
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .second-page-flex .first-flex
+    {
+        padding: 40px;
+    }
+
+    .second-page-flex img 
+    {
+        width: 120px;
+        height: auto;
+    }
+}
